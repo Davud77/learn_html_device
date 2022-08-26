@@ -1,0 +1,142 @@
+* {
+  font-family: "gilroyextrabold";
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 400px;
+  background-color: rgba(240, 198, 46, 0.5254901961);
+  margin-top: 100px;
+}
+.header a {
+  color: #000;
+}
+.header_logo {
+  position: absolute;
+  top: -25%;
+  font-size: 60px;
+  font-weight: 800;
+}
+.header_menu {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 50px;
+}
+.header_nav {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+.header_search {
+  display: flex;
+  width: 600px;
+}
+.header_search_input {
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "gilroylight";
+}
+.header_login {
+  width: 300px;
+}
+.header_compare {
+  width: 140px;
+}
+.header_cart {
+  width: 100px;
+}
+.header_catalog {
+  width: 600px;
+}
+.header_devilery {
+  width: 140px;
+}
+.header_garant {
+  width: 300px;
+}
+.header_contact {
+  margin-right: 5px;
+}
+.header_icon {
+  margin-right: 5px;
+}
+.header_icon_plus {
+  margin-left: 10px;
+  opacity: 0.4;
+}
+
+.slider {
+  height: 480px;
+  background-color: rgb(24, 176, 103);
+}
+
+.catalog {
+  height: 300px;
+  background-color: rgb(84, 40, 203);
+}
+
+.promo {
+  height: 320px;
+  background-color: rgb(193, 24, 160);
+}
+
+.company {
+  height: 140px;
+  background-color: rgb(209, 181, 22);
+}
+
+.about {
+  height: 550px;
+  background-color: rgb(134, 11, 206);
+}
+
+.footer {
+  height: 320px;
+  background-color: rgb(0, 30, 166);
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url(/fonts/web/opensans.woff) format("woff"), url(/fonts/web/opensans.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "opensanslight";
+  src: url(/fonts/web/opensanslight.woff) format("woff"), url(/fonts/web/opensanslight.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "gilroylight";
+  src: url(/fonts/web/gilroylight.woff) format("woff"), url(/fonts/web/gilroylight.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url(/fonts/web/gilroyextrabold.woff) format("woff"), url(/fonts/web/gilroyextrabold.woff2) format("woff2");
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

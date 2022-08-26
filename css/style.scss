@@ -1,0 +1,61 @@
+* {
+    font-family: 'gilroyextrabold';
+    
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+@import 'blocks/header';
+@import 'blocks/slider';
+@import 'blocks/catalog';
+@import 'blocks/promo';
+@import 'blocks/company';
+@import 'blocks/about';
+@import 'blocks/map';
+@import 'blocks/footer';
+
+
+@font-face {
+    font-family: 'opensans';
+    src: url(/fonts/web/opensans.woff) format('woff'), url(/fonts/web/opensans.woff2) format('woff2');
+    font-weight: 400;
+  }
+  
+  
+  @font-face {
+    font-family: 'opensanslight';
+    src: url(/fonts/web/opensanslight.woff) format('woff'), url(/fonts/web/opensanslight.woff2) format('woff2');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'gilroylight';
+    src: url(/fonts/web/gilroylight.woff) format('woff'), url(/fonts/web/gilroylight.woff2) format('woff2');
+    font-weight: 400;
+  }
+  
+  
+  @font-face {
+    font-family: 'gilroyextrabold';
+    src: url(/fonts/web/gilroyextrabold.woff) format('woff'), url(/fonts/web/gilroyextrabold.woff2) format('woff2');
+    font-weight: 700;
+  }
