@@ -375,7 +375,16 @@ html, body {
 
 .company {
   height: 140px;
-  background-color: rgb(209, 181, 22);
+}
+.company_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+.company_logo {
+  width: 260px;
+  height: 100px;
 }
 
 .about {
