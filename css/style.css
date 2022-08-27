@@ -387,9 +387,84 @@ html, body {
   height: 100px;
 }
 
-.about {
-  height: 550px;
-  background-color: rgb(134, 11, 206);
+.box {
+  height: 700px;
+}
+.box_container {
+  display: flex;
+  justify-content: space-between;
+}
+.box_hr {
+  margin-top: 90px;
+  width: 80px;
+  height: 7px;
+  background-color: #000;
+}
+.box_title {
+  margin-top: 50px;
+  font-size: 47.5px;
+  font-weight: 800;
+  line-height: 47.5px;
+  letter-spacing: 0.48px;
+  color: #000;
+}
+.box_subtitle {
+  font-family: "gilroylight";
+  margin-top: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.5058823529);
+}
+.box_ul {
+  margin-top: 40px;
+}
+.box_li {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #000;
+}
+.box_btn {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+}
+.box_btn a {
+  color: #000;
+  text-decoration: none;
+}
+.box_btn_title {
+  width: 260px;
+  height: 8px;
+  background-color: #f0c52e;
+  font-size: 18.5px;
+  font-weight: 800;
+  line-height: 9.5px;
+  letter-spacing: 3.7px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.box_btn_title:hover {
+  width: 260px;
+  height: 40px;
+  background-color: #f0c52e;
+  font-size: 18.5px;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: 3.7px;
+  text-align: center;
+  color: #f0c52e;
+  transition: all 0.3s;
+}
+.box_img {
+  margin: 20px 0;
 }
 
 .footer {
