@@ -1,4 +1,111 @@
 .footer {
+    background-color: #464646;
     height: 320px;
-    background-color: rgb(0, 30, 166);
+    &_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 320px;
+    }
+    &_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_ul {
+            display: flex;
+            padding-inline-start: 0;
+            list-style-type: none;
+        }
+        &_li {
+            margin-left: 35px;
+            a {
+                font-family: 'gilroylight';
+                text-decoration: none;
+                width: 42px;
+                height: 11px;
+                opacity: 0.7;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 36px;
+                letter-spacing: 0.15px;
+                text-align: right;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        img {
+            margin-right: 8px;
+            fill: #ffc600;
+        }
+        
+    }
+    &_body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        &_ul {
+            display: flex;
+            padding-inline-start: 0;
+            list-style-type: none;
+        }
+        &_li {
+            a {
+                margin: 0 20px;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 800;
+                line-height: 24px;
+                letter-spacing: 3.6px;
+                color: #fff;
+            }
+        }
+    }
+    &_foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &_logo {
+        font-size: 60px;
+        font-weight: 800;
+        color: #ffc600;
+    }
+    
+    &_adr {
+        font-family: 'gilroylight';
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    &_tel {
+        font-family: 'gilroylight';
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: right;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    &_social {
+        display: flex;
+        padding-inline-start: 0;
+        list-style-type: none;
+        &_item {
+            margin: 0 10px;
+            width: 32px;
+            height: 32px;
+            img {
+                opacity: 0.4;
+            }
+        }
+    }
+    &_hr {
+        width: 80px;
+        height: 7px;
+        background-color: #ffc600;
+    }
 }
