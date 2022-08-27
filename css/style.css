@@ -15,12 +15,13 @@ html, body {
 }
 
 .header {
-  height: 400px;
+  height: 330px;
   background-color: rgba(240, 198, 46, 0.5254901961);
   margin-top: 100px;
 }
 .header a {
   color: #000;
+  text-decoration: none;
 }
 .header_logo {
   position: absolute;
@@ -85,166 +86,108 @@ html, body {
   opacity: 0.4;
 }
 
-.sliderr {
-  height: 480px;
-  background-color: rgb(24, 176, 103);
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-.slider, .slider .imgs {
-  width: 100%;
-  height: 100%;
-  max-height: 300px;
-  position: relative;
-}
-
 .slider {
-  height: 75%;
-  max-height: 300px;
+  position: relative;
+  top: -100px;
+  height: 480px;
 }
-
-.slider .imgs {
-  display: flex;
-  overflow: hidden;
+.slider_container {
+  height: 480px;
 }
-
-.slider .img {
-  min-width: 100%;
-  height: 100%;
+.slider_2 {
+  display: none;
+}
+.slider_3 {
+  display: none;
+}
+.slider_item {
+  display: none;
+}
+.slider_item_active {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  justify-content: space-between;
+}
+.slider_img {
+  max-width: 100%;
+}
+.slider_descriptions {
+  width: 510px;
+}
+.slider_hr {
+  position: relative;
+  top: 30px;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+}
+.slider_numb {
   position: absolute;
-  left: 100%;
-  /* animation duration can't be greater than variable interval in JS! */
-  /* check JS for other settings */
-  -webkit-animation: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
-          animation: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  background-size: cover !important;
-  background-position: 50% !important;
+  right: 0;
+  top: -25px;
+  font-size: 180.5px;
+  font-weight: 800;
+  line-height: 180.5px;
+  letter-spacing: 1.81px;
+  text-align: right;
+  color: #fff;
 }
-
-/* Change images here */
-.slider .img:nth-of-type(1) {
-  background: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e");
+.slider_title {
+  margin-top: 60px;
+  font-size: 47.5px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: #000;
 }
-
-.slider .img:nth-of-type(2) {
-  background: url("https://images.pexels.com/photos/36764/marguerite-daisy-beautiful-beauty.jpg");
+.slider_subtitle {
+  font-family: "gilroylight";
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #464646;
 }
-
-.slider .img:nth-of-type(3) {
-  background: url("https://wallpapercave.com/wp/9F6GsSn.jpg");
-}
-
-.slider .img:nth-of-type(4) {
-  background: url("https://k60.kn3.net/taringa/F/C/6/8/4/5/VCLR/3E9.jpg");
-}
-
-.slider .img span {
-  padding: 7px 20px;
-  background: rgba(0, 0, 0, 0.8);
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  color: #f0f0f0;
-  font-size: 14px;
-  font-family: sans-serif;
-}
-
-.dots {
-  position: absolute;
-  bottom: -18px;
-  left: 0;
+.slider_ttx {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
 }
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background: gray;
+.slider_ttx_title {
+  font-family: "gilroylight";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+  text-align: left;
+  color: #000;
+}
+.slider_ttx_subtitle {
+  font-family: "gilroylight";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  text-align: left;
+  color: #464646;
+}
+.slider_dots {
+  position: absolute;
+  top: 320px;
+  right: 0;
+}
+.slider_dot {
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  margin: 0 3px;
-  cursor: pointer;
+}
+.slider_dot_active {
+  background-color: #000;
 }
 
-.active-dot {
-  background: #3f3f3f;
-  cursor: default;
-}
-
-@-webkit-keyframes leftNext {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-@keyframes leftNext {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 0;
-  }
-}
-@-webkit-keyframes leftCurr {
-  from {
-    left: 0;
-  }
-  to {
-    left: -100%;
-  }
-}
-@keyframes leftCurr {
-  from {
-    left: 0;
-  }
-  to {
-    left: -100%;
-  }
-}
-@-webkit-keyframes rightNext {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
-}
-@keyframes rightNext {
-  from {
-    left: -100%;
-  }
-  to {
-    left: 0;
-  }
-}
-@-webkit-keyframes rightCurr {
-  from {
-    left: 0;
-  }
-  to {
-    left: 100%;
-  }
-}
-@keyframes rightCurr {
-  from {
-    left: 0;
-  }
-  to {
-    left: 100%;
-  }
-}
 .catalog {
   height: 300px;
 }
